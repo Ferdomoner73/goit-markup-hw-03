@@ -1,0 +1,187 @@
+/* gamma of color on the page
+body {
+    color: #4D5AE5; колір першої частини слова логотипу 
+    color: #2E2F42; колір заголовків і підзаголовків сторінки 
+    color: #434455; колір тексту параграфів 
+    color: #E7E9FC; текст у футері
+    color: #FFFFFF; головний заголовок 
+    color: #F4F4FD; заголовок логтипу другої частини тексту у футері
+}    */
+
+:root {
+  --heading-main-color: #2e2f42;
+  --part-logo-color: #4d5ae5;
+  --second-part-logo-color: #f4f4fd;
+  --common-text-color: #434455;
+  --main-header: #ffffff;
+  --footer-text: #e7e9fc;
+  --regular-text-weight: 400;
+  --medium-text-weight: 500;
+  --bold-text-weight: 700;
+  --extra-bold-text-weight: 800;
+  --style-of-text: 'Raleway', sans-serif;
+}
+
+body {
+  color: var(--common-text-color);
+  background-color: var(--main-header);
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+/* logo futures */
+
+.logo-heading,
+.foot-logo {
+  color: var(--heading-main-color);
+  font-family: var(--style-of-text);
+  font-style: normal;
+  font-weight: var(--extra-bold-text-weight);
+  font-size: 18px;
+  line-height: 1.33;
+
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.head-specific-logo {
+  color: var(--part-logo-color);
+}
+
+.foot-logo {
+  color: var(--second-part-logo-color);
+}
+
+/* Header */
+.heading {
+  color: var(--heading-main-color);
+  text-decoration: none;
+}
+
+.common-heading {
+  font-style: normal;
+  font-weight: var(--medium-text-weight);
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+}
+
+.header-heading {
+  font-style: normal;
+  font-weight: var(--medium-text-weight);
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.head-addresss {
+  color: var(--common-text-color);
+}
+
+/* Main */
+.hero,
+.foot {
+  background-color: var(--heading-main-color);
+}
+
+.hero-header {
+  color: var(--main-header);
+  font-style: normal;
+  font-weight: var(--bold-text-weight);
+  font-size: 56px;
+  line-height: 1.07;
+
+  letter-spacing: 0.02em;
+}
+
+.button {
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-weight: var(--medium-text-weight);
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Roboto';
+
+  letter-spacing: 0.04em;
+
+  color: var(--main-header);
+  background-color: var(--part-logo-color);
+
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--part-logo-color);
+  background-color: var(--second-part-logo-color);
+}
+
+.contacts-selection {
+  font-weight: var(--regular-text-weight);
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+  font-style: normal;
+}
+
+.contacts-selection:hover,
+.contacts-selection:focus {
+  color: var(--part-logo-color);
+  text-decoration: underline;
+}
+
+.common-text {
+  font-weight: var(--regular-text-weight);
+  font-size: 16px;
+  line-height: 1.5;
+
+  letter-spacing: 0.02em;
+}
+
+.sections-heading {
+  font-style: normal;
+  font-weight: var(--bold-text-weight);
+  font-size: 36px;
+  line-height: 1.11;
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+/* footer */
+
+.foot {
+  color: var(--footer-text);
+}
+
+.fix {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.accent {
+  color: var(--part-logo-color);
+}
